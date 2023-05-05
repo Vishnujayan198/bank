@@ -1,0 +1,17 @@
+<div class="row ">
+    <h1 class="text-white p-3 ms-3">{{data}}</h1>
+
+    <div class="col-4 container mt-5 " style="background-color: rgba(97, 10, 10, 0.345); border-radius: 20px; padding: 10px;">
+        <h1 style="text-align: center;">login</h1>
+        <form>
+        <div class="mb-3">
+          <input name="acc" [(ngModel)]="uname"   type="text" [placeholder]="placeHolderData" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <input name="pass" [(ngModel)]="psw" type="password" placeholder="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <button (click)="login()" type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-warning ms-3">New here?</button>
+
+      </form></div>
+</div>
